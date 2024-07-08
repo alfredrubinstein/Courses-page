@@ -1,0 +1,72 @@
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Estilo del mensaje de "No encontrado" */
+  .notFound {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  /* Animación cómica */
+  .animation {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 48px;
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+  
+  /* Botón de regreso */
+  .back {
+    font-size: 18px;
+    color: #4A90E2;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 2px solid #4A90E2;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .back:hover {
+    background-color: #4A90E2;
+    color: #fff;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .notFound {
+      font-size: 20px;
+    }
+  
+    .animation {
+      font-size: 36px;
+    }
+  
+    .back {
+      font-size: 16px;
+    }
+  }
+  

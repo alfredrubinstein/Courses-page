@@ -1,0 +1,15 @@
+.linkStyle {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s;
+  padding: 0px 20px;
+  border-radius: 5px;
+  margin: 0px;
+  background-color: var(--main);
+}
+.linkStyle:hover {
+  color: var(--main);
+  background-color: var(--main);
+  font-size: 20px;
+}

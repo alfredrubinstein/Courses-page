@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,400;1,500&display=swap");
+
+body {
+  direction: rtl;
+  background-color:green;
+}
+/* Global Variable */
+:root {
+  --textoFooter:white;
+  --fondoFooter:black;
+  --fondoGeneral:rgb(0, 247, 255);
+}
+* {
+  font-family: "Besley", serif;
+  transition: 0.3s;
+}
+*::selection {
+  background: black;
+  color: red;
+}
+html::-webkit-scrollbar {
+  width: 20px;
+}
+html::-webkit-scrollbar-thumb {
+  background: rgb(116, 116, 116);
+}
+html::-webkit-scrollbar-track {
+  background: rgb(205, 205, 205);
+}

@@ -1,0 +1,15 @@
+.logo {
+    color: #8cff00; /* Correspondiente a text-green */
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    /* letter-spacing: 0.1rem; */
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(90deg, #000000 0%, #0015ff 100%);
+    /* background-color: #ff00f7; */
+    padding: 0.3rem;
+    border-radius: 100%;
+    width: 85px;
+    /* box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.5); */
+    box-shadow: 0 0 3px 3px rgb(0, 162, 255);
+  }

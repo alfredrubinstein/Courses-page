@@ -1,0 +1,57 @@
+.header {
+  position: relative;
+}
+.header img {
+  /* margin-top: 63px; */
+  height: 88.4vh;
+  width: 100%;
+  object-fit: cover;
+}
+.header .Overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #00000096;
+  opacity: 0.4;
+}
+/* contenido de div promocion */
+.header .HeaderContent {
+  position: absolute;
+  /* top: 50%;
+  left: 20%; */
+  top: 35%;
+  left: 20%;
+  right: 20%;
+  background-color: #0040ff;
+  /* background: radial-gradient(circle, #b8abff 0%, #00d0ff 50%, #4c00ff 100%); */
+  /* border: 1px solid #0000009d; */
+  box-shadow: 0px 0px 20px 1px #00ffee;
+  text-align: center;
+  padding: 20px;
+  color: #ffffff;
+  border: 5px solid #00a6ff;
+  border-radius: 10px;
+}
+
+.header .HeaderContent h6 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.header .HeaderContent {
+  animation: scale 4s infinite;
+}
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
