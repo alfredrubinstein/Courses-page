@@ -1,8 +1,9 @@
 import React from 'react';
-import data from './data';
 import styles from './Home.module.css';
 import Modal from '../../Components/Modal/Modal'
 import { useNavigate } from 'react-router-dom';
+import fotoHeader from '../../Images/8.jpg'
+import fotoHeader2 from '../../Images/10.jpg'
 
 const Home = () => {
   const navigate = useNavigate();
@@ -16,7 +17,7 @@ navigate('/login');
       <div className={styles.header}>
         <div>
           <div className={styles.img}>
-            <img src={data.header.img} alt="" />
+            <img src={fotoHeader} alt="" />
           </div>
           <div className={styles.Overlay}></div>
         </div>
@@ -33,7 +34,7 @@ navigate('/login');
       {/* Second Header -foto de separacion*/}
       {/* <div className={styles.second_header}>
         <div>
-          <img src={data.secondHeader.img} alt="" />
+          <img src={fotoHeader2}  alt="" />
         </div>
         <div className={styles.Overlay}></div>
       </div> */}

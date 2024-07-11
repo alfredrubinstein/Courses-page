@@ -1,15 +1,15 @@
-// revisar conseguir forma de simular axios sin tener server , alomejor usano json place holder
-//el json demo server deve incluir ,(todo los datos que en algun lugar de la aplicacion se use props, que normalmente son externos y casi siempre vienen desde el server)...
-//1- usuario
-//2- cursos
+//LUGARES DONDE HAY ARCHIVOS Y DEVERIA HAVER DATABASES
+//Pages/Course/coursesData.js
+//Pages/Dashboard/userData.js
+//Pages/Gallery/imagesData.js
+//Pages/Home/data.js// revisar borrar este documento tras transferir los datos de aqui
 
 
-
-
-
-
-
-
+//COSAS PARA HECER -
+//1- ARREGLAR LA DIRECCION DE LAS FOTOS QUE ESTAN EN EL DB.JS PARA QUE AHORA VALLAN A PUBLIC/IMAGES (parece que no pueden importarse si estan fuera de el src????)
+//2- ACHICAR EL DB.JS A LO NECESARIO POSIBLE Y OPTIMIZARLO
+//3-EMPEZAR A AGREGAR AXIOS A TODA LAS DIRECCIONES ARRIBA MENCIONADAS
+//4- AGREGAR UNA PAGINA DE LOGIN Y REGISTRO EL USEFORM
 
 
 

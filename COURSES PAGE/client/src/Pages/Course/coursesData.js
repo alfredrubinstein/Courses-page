@@ -1,3 +1,4 @@
+//coursesData.js
 const courses = [
   {
     id: 1,
