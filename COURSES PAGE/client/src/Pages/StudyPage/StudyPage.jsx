@@ -1,3 +1,4 @@
+// revisar agregar aqui hoja de embeded de youtube
 import React from 'react'
 
 export default function StudyPage() {

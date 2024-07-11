@@ -1,3 +1,4 @@
+// revisar el  ImagesData.js tiene que conseguirse con axios
 import React from 'react';
 import GalleryHeader from "../../Images/9.jpg";
 import styles from './gallery.module.css';

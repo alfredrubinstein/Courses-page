@@ -1,3 +1,4 @@
+// revisar consumo de datos de usuario
 import React from 'react';
 import user from './userData';
 import styles from './dashboard.module.css';

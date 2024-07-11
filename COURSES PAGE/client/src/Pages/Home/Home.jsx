@@ -22,10 +22,10 @@ navigate('/login');
         </div>
         <div className={styles.HeaderContent}>
           <h6>
-            {data.header.title}
-               </h6>
+          "מבצעים מיוחדים על מיטב הקורסים שלנו לרגל ההשקה!"
+          </h6>
           <button className={styles.btn} onClick={handlerButton}>
-            {data.header.buttonText}
+          קרא עוד והצטרף אלינו
           </button>
         </div>
       </div>

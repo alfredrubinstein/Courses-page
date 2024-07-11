@@ -1,10 +1,11 @@
+// revisar agregar aqui datos de usuario desde usecontext para que se pueda usar desde todo los elementos
 import "./App.css";
 
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 import NotFound from "./Pages/NotFound/NotFound";
 import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
-import { Home, About, Gallery, Contact, Course, Courses, Dashboard, Login, Register, StudyPage, PaymentPage } from "./Pages";
+import { Home, About, Gallery, Contact, Course, Courses, Dashboard, Login, Register, StudyPage, Carrito } from "./Pages";
 
 // Layout principal con Navbar y Footer
 const MainLayout = () => (
@@ -36,7 +37,7 @@ const App = () => {
           <Route path="/course/:id" element={<Course />}></Route>
           <Route path="/dashboard" element={<Dashboard />}></Route>
           <Route path="/studypage" element={<StudyPage />}></Route>
-          <Route path="/paymentpage" element={<PaymentPage />}></Route>
+          <Route path="/Carrito" element={<Carrito />}></Route>
           <Route path="*" element={<NotFound />}></Route>
         </Route>
 

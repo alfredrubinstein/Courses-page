@@ -1,3 +1,4 @@
+// revisar extraccion de todo los props usando axios
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import courses from '../Course/coursesData'; 

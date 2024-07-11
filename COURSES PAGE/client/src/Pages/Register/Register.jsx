@@ -1,3 +1,4 @@
+// revisar hacer que esto use useform -usar axios para enviar el contenido rellenado
 import React from "react";
 import ContactHeader from "../../Images/7.jpg";
 import { useNavigate } from "react-router-dom";

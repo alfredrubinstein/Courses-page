@@ -1,3 +1,23 @@
+// revisar conseguir forma de simular axios sin tener server , alomejor usano json place holder
+//el json demo server deve incluir ,(todo los datos que en algun lugar de la aplicacion se use props, que normalmente son externos y casi siempre vienen desde el server)...
+//1- usuario
+//2- cursos
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Fase 1: Configuración inicial y MVP (Producto Mínimo Viable)
 
 Crear el proyecto:

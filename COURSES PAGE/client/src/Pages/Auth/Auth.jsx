@@ -1,3 +1,4 @@
+// revisar entender que logica tiene esto
 import { useState } from "react";
 import Login from "./Login";
 import Register from "./Register";
