@@ -1,66 +1,120 @@
-/* General styling */
-.contact {
-    text-align: center;
-    margin-bottom: 20px;
-  }
+/* Estilos generales */
+.register_form {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+  height: 100%;
+}
+.divIntermedio {
+  /* max-width: 600px; */
+  padding: 20px;
+  background-color: #ff0000;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.divInterno {
   
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.formGroup {
+  margin-bottom: 10px;
+  /* background-color: red; */
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 5px;
+  /* background-color: purple; */
+}
+
+.formGroup input {
+  background-color: rgb(126, 0, 126);
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.divCheckbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  /* background-color: orange; */
+}
+
+.checkbox {
+  /* margin-right: 10px; */
+  /* background-color: orange; */
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.btn_secondary {
+  width: 100%;
+  padding: 10px;
+  background-color: #6c757d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn_secondary:hover {
+  background-color: #5a6268;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
   .register_form {
-    margin-top: 58px;
-    background-color: #f0f8ff;
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-height: 78.2vh;
-max-width: 600px;
-margin-left: auto;
-margin-right: auto;
-  }
-  
-  .title {
-    text-align: center;
-    font-size: 24px;
-    font-weight: 700;
-    color: #6976ff; /* Pink color */
-    margin-bottom: 20px;
-  }
-  
-  .formGroup {
-    margin-bottom: 15px;
-  }
-  
-  .formGroup label {
-    font-size: 18px;
-    color: #333;
-  }
-  
-  .form-control {
-    border-radius: 10px;
-    padding: 10px;
-    border: 2px solid #0080ff; /* Dodger blue */
-    margin-top: 5px;
-  }
-  
-  .btn {
-    display: block;
-    width: 100%;
     padding: 15px;
-    background-color: #6976ff; /* Pink color */
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 18px;
-    margin-top: 10px;
-    transition: background-color 0.3s ease;
   }
-  
-  .btn:hover {
-    background-color: #00087a; /* Deep pink */
+
+  .formGroup input {
+    padding: 8px;
   }
-  .logoContainer{
-margin-left: auto;
-margin-right: auto; 
-align-items: center;
-display: flex;
-flex-direction: column;
+
+  .btn, .btn_secondary {
+    padding: 8px;
   }
+}
+
+@media (max-width: 576px) {
+  .register_form {
+    padding: 10px;
+  }
+
+  .formGroup input {
+    padding: 6px;
+  }
+
+  .btn, .btn_secondary {
+    padding: 6px;
+  }
+}

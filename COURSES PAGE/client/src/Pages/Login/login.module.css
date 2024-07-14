@@ -1,99 +1,115 @@
-/* login.module.css */
-.contact {
-    position: relative;
+/* Estilos generales */
+.loginForm {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.divIntermedio {
+  max-width: 600px;
+  padding: 20px;
+  background-color: #ff0000;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+
+.divInterno {
+  /* width: 100%;
+  background-color: red; */
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.formGroup {
+  margin-bottom: 10px;
+  /* background-color: red; */
+}
+
+.formGroup label {
+  display: block;
+  /* text-align: center; */
+  margin-bottom: 5px;
+}
+
+.formGroup input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #8b8b8b;
+  border-radius: 10px;
+  background-color: purple;
+}
+.formLabelCheckbox {
+/* background-color: #fff; */
+}
+.formGroup {
+  /* background-color: #fff; */
+}
+.form-check-label {
+  background-color: yellow;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.btnSecondary {
+  width: 100%;
+  padding: 10px;
+  background-color: #6c757d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btnSecondary:hover {
+  background-color: #5a6268;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .loginForm {
+    padding: 15px;
   }
-  
-  .contact img {
-    height: 50vh;
-    width: 100%;
-    object-fit: cover;
+
+  .formGroup input {
+    padding: 8px;
   }
-  
-  .login_form {
-    background: #f0f8ff;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: -20px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 58px;
-    height: 78.2vh;
+
+  .btn,
+  .btnSecondary {
+    padding: 8px;
   }
-  
-  .login_form h6 {
-    font-size: 24px;
-    margin: 20px 0;
-    font-weight: 600;
-    text-align: center;
-    color: #2a2dff;
-  }
-  
-  .login_form .form-group {
-    margin-bottom: 15px;
-  }
-  
-  .login_form .form-group label {
-    color: #1e90ff;
-  }
-  
-  .login_form .form-group input {
-    border: 2px solid #1e90ff;
-    border-radius: 10px;
+}
+
+@media (max-width: 576px) {
+  .loginForm {
     padding: 10px;
   }
-  
-  .login_form .btn {
-    background-color: #5947ff;
-    color: white;
-    border: none;
-    border-radius: 15px;
-    padding: 10px 20px;
-    margin: 10px 0;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-left: 1%;
-    margin-right: 39%;
-    
-  }
-  
-  .login_form .btn:hover {
-    background-color: #06006f;
-  }
-  
-  .login_form .btn-secondary {
-    background-color: #87cefa;
-    border: none;
-    border-radius: 15px;
-    padding: 10px 20px;
-    margin: 10px 0;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .login_form .btn-secondary:hover {
-    background-color: #00bfff;
-  }
-  
-  @media (max-width: 768px) {
-    .contact img {
-      height: 30vh;
-    }
-  
-    .login_form {
-      padding: 15px;
-    }
-  }
-  
 
+  .formGroup input {
+    padding: 6px;
+  }
 
-  .logoContainer{
-    margin-left: auto;
-    margin-right: auto; 
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-      }
+  .btn,
+  .btnSecondary {
+    padding: 6px;
+  }
+}

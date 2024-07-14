@@ -1,28 +1,42 @@
-// revisar hacer que esto use useform -usar axios para enviar el contenido rellenado
-import React from "react";
-import ContactHeader from "../../Images/7.jpg";
-import { useNavigate } from "react-router-dom";
-import styles from "./register.module.css";
-import Logo from "../../Components/Logo/Logo";
+import React, { useContext, useState } from 'react';
+import axios from 'axios';
+import { useForm } from 'react-hook-form';
+import { useNavigate } from 'react-router-dom';
+import styles from './register.module.css';
+import Logo from '../../Components/Logo/Logo';
+import { AuthContext } from '../../contexts/AuthContext'; // Importa el contexto
 
-const Register = ({ onLogin }) => {
+const Register = () => {
+  const { register, handleSubmit, formState: { errors } } = useForm();
   const navigate = useNavigate();
-  const handleRegister = () => {
-    alert("נרשמת בהצלחה");
-    navigate("/about");
+  const [bypassValidation, setBypassValidation] = useState(false);
+  const { login } = useContext(AuthContext); // Usa el contexto
+
+  const onSubmit = async (data) => {
+    if (bypassValidation) {
+      alert("כניסה ללא אימות");
+      navigate("/about");
+      return;
+    }
+
+    try {
+      const response = await axios.post("URL_TO_YOUR_API/register", data);
+      login(response.data); // Guarda los datos de autenticación en el contexto
+      alert("נרשמת בהצלחה");
+      navigate("/about");
+    } catch (error) {
+      console.error("Error registering:", error);
+      alert("שגיאה בהרשמה");
+    }
   };
 
   return (
     <>
-      {/* <div className={styles.contact}>
-        <img src={ContactHeader} alt="Contact Header" />
-      </div> */}
-
       {/* Register Form */}
-      <div className={`${styles.register_form} container`}>
-        <div className="row justify-content-center">
-          <div className="col-sm-9">
-            <form action="">
+      <div className={styles.register_form}>
+        <div className={styles.divIntermedio}>
+          <div className={styles.divInterno}>
+            <form onSubmit={handleSubmit(onSubmit)}>
               <h6 className={styles.title}>הרשמה למשתמשים חדשים</h6>
               <div className={styles.logoContainer}>
                 <Logo />
@@ -34,8 +48,9 @@ const Register = ({ onLogin }) => {
                   className="form-control"
                   id="name"
                   placeholder="השם שלך"
-                  required
+                  {...register("name", { required: "שם חובה" })}
                 />
+                {errors.name && <span>{errors.name.message}</span>}
               </div>
 
               <div className={styles.formGroup}>
@@ -45,8 +60,9 @@ const Register = ({ onLogin }) => {
                   className="form-control"
                   id="email"
                   placeholder="האמייל שלך"
-                  required
+                  {...register("email", { required: "אמייל חובה" })}
                 />
+                {errors.email && <span>{errors.email.message}</span>}
               </div>
 
               <div className={styles.formGroup}>
@@ -56,20 +72,31 @@ const Register = ({ onLogin }) => {
                   className="form-control"
                   id="password"
                   placeholder="הסיסמה שלך"
-                  required
+                  {...register("password", { required: "סיסמה חובה" })}
                 />
+                {errors.password && <span>{errors.password.message}</span>}
               </div>
 
-              <button
-                type="submit"
-                className={styles.btn}
-                onClick={handleRegister}
-              >
+              <div className={styles.divCheckbox}>
+                <input
+                  type="checkbox"
+                  className={styles.checkbox}
+                  id="bypassValidation"
+                  checked={bypassValidation}
+                  onChange={() => setBypassValidation(!bypassValidation)}
+                />
+                <label className="form-check-label" htmlFor="bypassValidation">
+                  עקוף אימות
+                </label>
+              </div>
+
+              <button type="submit" className={styles.btn}>
                 הירשם
               </button>
+
               <button
                 type="button"
-                className={styles.btn}
+                className={styles.btn_secondary}
                 onClick={() => navigate("/login")}
               >
                 יש לך כבר חשבון?
