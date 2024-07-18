@@ -1,31 +1,59 @@
+.logo{
+  font-size: .5rem;
+  /* background-color: red; */
+}
+.salir{
+  background-color: blue;
+border-radius: 5px;
+font-size: 10px;
+}
+.salir:hover{
+  background-color: rgb(197, 197, 250);
+  cursor:pointer;
+}
+.modalTitle{
+  align-self: center;
+}
+.botomContainer{
+  /* background-color: #fff; */
+}
+.modalTitleContiner{
+  display:flex;
+  flex-direction: row; 
+  justify-content:space-between;
+align-items: center;
+  margin-top: 5px;
+  margin-right: 3px; 
+  /* flex-shrink: 1; */
+}
 .modalContainer {
   position: absolute;
-  top: 35%;
-  left: 20%;
-  right: 20%;
-  background-color: #00a6ff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width:400px;
+  background-color: #1f76a1;
   box-shadow: 0px 0px 20px 1px #00ffee;
   text-align: center;
   padding: 3px;
   color: #000000;
-  border: 5px solid #00a6ff;
-  border-top: 20px solid #00a6ff;
+  /* border: 5px solid #00a6ff; */
+  /* border-top: 20px solid #00a6ff; */
   border-radius: 10px;
   z-index: 100;
-  min-height: 200px;
   box-shadow: 0px;
+  display:flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
 }
 .modalInterno {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: -22.5%;
-  left: 0%;
-  right: 0%;
-  background-color: rgb(255, 255, 255);
-  align-items: center;
+margin:3px;
+margin-top: 3px;
+  background-color: rgb(0, 0, 0);
   text-align: center;
-  margin-top: 40px;
   border-radius: 10px;
+  color: white;
+  font-family: "Poppins", sans-serif;
   /* background-color: #00ff6e; */
 }

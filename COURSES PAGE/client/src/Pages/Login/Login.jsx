@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import styles from './login.module.css';
 import Logo from '../../Components/Logo/Logo';
 import { AuthContext } from '../../contexts/AuthContext';
+import Modal from '../../Components/Modal/Modal';
 
 const Login = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
@@ -32,6 +33,7 @@ const Login = () => {
 
   return (
     <>
+    <Modal text="hola estamos arreglando la pagina disculpe las molestias que esto pueda ocasionar" type="classic"/>
       {/* Login Form */}
       <div className={styles.loginForm}>
         <div className={styles.divIntermedio}>
