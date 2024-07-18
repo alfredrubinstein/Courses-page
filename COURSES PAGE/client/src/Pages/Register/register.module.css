@@ -9,7 +9,7 @@ transform: translate(-50%, -50%);
 .divIntermedio {
   /* max-width: 600px; */
   padding: 20px;
-  background-color: #ff0000;
+  background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -36,7 +36,7 @@ transform: translate(-50%, -50%);
 }
 
 .formGroup input {
-  background-color: rgb(126, 0, 126);
+  background-color: rgb(167, 167, 167);
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;

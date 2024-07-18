@@ -1,4 +1,7 @@
 /* Estilos generales */
+.divIntermedio h6{
+  text-align: center;
+}
 .loginForm {
   position: absolute;
   top: 50%;
@@ -7,11 +10,11 @@
 }
 
 .divIntermedio {
-  max-width: 600px;
+  max-width: 800px;
   padding: 20px;
-  background-color: #ff0000;
+  background-color: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
 }
 
 .divInterno {
@@ -42,7 +45,7 @@ font-size: 1rem;
   padding: 10px;
   border: 1px solid #8b8b8b;
   border-radius: 10px;
-  background-color: purple;
+  background-color: rgb(173, 173, 173);
 }
 .formLabelCheckbox {
 /* background-color: #fff; */
@@ -51,7 +54,7 @@ font-size: 1rem;
   /* background-color: #fff; */
 }
 .form-check-label {
-  background-color: yellow;
+  /* background-color: rgb(155, 155, 155); */
 }
 
 .btn {
