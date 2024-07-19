@@ -94,6 +94,7 @@ const Register = () => {
                 הירשם
               </button>
 
+
               <button
                 type="button"
                 className={styles.btn_secondary}
