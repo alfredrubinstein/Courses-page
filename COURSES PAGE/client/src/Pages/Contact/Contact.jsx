@@ -3,7 +3,7 @@ import { useForm, FormProvider } from 'react-hook-form';
 import styles from './contact.module.css';
 import FormHeader from '../../Components/FormComponents/FormHeader/FormHeader';
 import FormInput from '../../Components/FormComponents/FormInput/FormInput';
-import FormSubmitButton from '../../Components/FormComponents/FormSubmitButton/FormSubmitButton';
+import FormButtons from '../../Components/FormComponents/FormButtons/FormButtons';
 
 export default function Contact() {
   const methods = useForm();
@@ -22,7 +22,7 @@ export default function Contact() {
           <FormInput type="email" title="Email" placeholder="Enter your email" name="email" />
           <FormInput type="text" title="Subject" placeholder="Enter the subject" name="subject" />
           <FormInput type="textarea" title="Message" placeholder="Enter your message" name="message" />
-          <FormSubmitButton />
+          <FormButtons type="contact"/>
         </form>
       </div>
     </FormProvider>

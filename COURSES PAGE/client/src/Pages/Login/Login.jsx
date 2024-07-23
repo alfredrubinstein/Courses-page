@@ -4,7 +4,6 @@ import styles from './login.module.css';
 import FormButtons from '../../Components/FormComponents/FormButtons/FormButtons';
 import FormHeader from '../../Components/FormComponents/FormHeader/FormHeader';
 import FormInput from '../../Components/FormComponents/FormInput/FormInput';
-import FormSubmitButton from '../../Components/FormComponents/FormSubmitButton/FormSubmitButton';
 
 export default function Login() {
   const methods = useForm();
@@ -16,7 +15,7 @@ export default function Login() {
         <form className={styles.form}>
           <FormInput type="text" title="Username" placeholder="Enter your username" name="username" />
           <FormInput type="password" title="Password" placeholder="Enter your password" name="password" />
-          <FormSubmitButton />
+          <FormButtons type="login" />
         </form>
       </div>
     </FormProvider>

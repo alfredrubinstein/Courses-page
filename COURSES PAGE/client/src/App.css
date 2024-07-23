@@ -6,10 +6,11 @@
 
 body {
   direction: rtl;
-  background-color:green;
+  /* background-color:green; */
 }
 /* Global Variable */
 :root {
+  /* revisar agregar aqui mas variables */
   --textoFooter:white;
   --fondoFooter:black;
   --fondoGeneral:rgb(0, 247, 255);

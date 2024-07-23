@@ -3,7 +3,7 @@ import { useForm, FormProvider } from 'react-hook-form';
 import styles from './register.module.css';
 import FormHeader from '../../Components/FormComponents/FormHeader/FormHeader';
 import FormInput from '../../Components/FormComponents/FormInput/FormInput';
-import FormSubmitButton from '../../Components/FormComponents/FormSubmitButton/FormSubmitButton';
+import FormButtons from '../../Components/FormComponents/FormButtons/FormButtons';
 
 export default function Register() {
   const methods = useForm();
@@ -16,7 +16,7 @@ export default function Register() {
           <FormInput type="text" title="Username" placeholder="Enter your username" name="username" />
           <FormInput type="email" title="Email" placeholder="Enter your email" name="email" />
           <FormInput type="password" title="Password" placeholder="Enter your password" name="password" />
-          <FormSubmitButton />
+         <FormButtons type="register"/>
         </form>
       </div>
     </FormProvider>
