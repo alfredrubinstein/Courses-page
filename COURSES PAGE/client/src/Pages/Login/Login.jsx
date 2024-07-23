@@ -1,9 +1,10 @@
+//formulario
 import React from 'react';
 import { useForm, FormProvider } from 'react-hook-form';
 import styles from './login.module.css';
-import FormButtons from '../../Components/FormComponents/FormButtons/FormButtons';
 import FormHeader from '../../Components/FormComponents/FormHeader/FormHeader';
 import FormInput from '../../Components/FormComponents/FormInput/FormInput';
+import FormButtons from '../../Components/FormComponents/FormButtons/FormButtons';
 
 export default function Login() {
   const methods = useForm();

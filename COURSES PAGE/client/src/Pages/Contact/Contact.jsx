@@ -1,3 +1,4 @@
+//formulario
 import React from 'react';
 import { useForm, FormProvider } from 'react-hook-form';
 import styles from './contact.module.css';
@@ -8,21 +9,15 @@ import FormButtons from '../../Components/FormComponents/FormButtons/FormButtons
 export default function Contact() {
   const methods = useForm();
 
-  const onSubmit = (data) => {
-    console.log('Form data:', data);
-    // agregar aquí para manejar el envío del formulario, como enviar los datos a un servidor.
-  };
-
   return (
     <FormProvider {...methods}>
       <div className={styles.container}>
         <FormHeader type="contact" />
-        <form className={styles.form} onSubmit={methods.handleSubmit(onSubmit)}>
+        <form className={styles.form}>
           <FormInput type="text" title="Name" placeholder="Enter your name" name="name" />
           <FormInput type="email" title="Email" placeholder="Enter your email" name="email" />
-          <FormInput type="text" title="Subject" placeholder="Enter the subject" name="subject" />
-          <FormInput type="textarea" title="Message" placeholder="Enter your message" name="message" />
-          <FormButtons type="contact"/>
+          <FormInput type="text" title="Message" placeholder="Enter your message" name="message" />
+          <FormButtons type="contact" />
         </form>
       </div>
     </FormProvider>

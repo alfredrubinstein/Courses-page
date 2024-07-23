@@ -1,3 +1,4 @@
+//formulario
 import React from 'react';
 import { useForm, FormProvider } from 'react-hook-form';
 import styles from './register.module.css';
@@ -16,7 +17,7 @@ export default function Register() {
           <FormInput type="text" title="Username" placeholder="Enter your username" name="username" />
           <FormInput type="email" title="Email" placeholder="Enter your email" name="email" />
           <FormInput type="password" title="Password" placeholder="Enter your password" name="password" />
-         <FormButtons type="register"/>
+          <FormButtons type="register" />
         </form>
       </div>
     </FormProvider>
