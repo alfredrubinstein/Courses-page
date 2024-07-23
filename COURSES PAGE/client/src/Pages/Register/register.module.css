@@ -1,120 +1,98 @@
-/* Estilos generales */
-.register_form {
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
+.title {
+     font-size: 20px;
+    font-weight: bold;
+    color: #007bff;
+    margin-top: 10px;
+    font-family: "Poppins", sans-serif;
+  }
+
+.containerForm{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
+  width: 100%;
+  background-color: #f8f8f8;
 }
-.divIntermedio {
-  /* max-width: 600px; */
-  padding: 20px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.register_form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;  
+  max-width: 500px;  
+  padding: 30px;
+  background-color: #f8f8f8; 
+  border: 1px solid #ddd;  
+  border-radius: 8px;      
 }
 
-.divInterno {
-  
+.divIntermedio {
+  padding: 0; 
 }
 
 .logoContainer {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+}
+
+.logoContainer img {
+  max-width: 200px;
 }
 
 .formGroup {
-  margin-bottom: 10px;
-  /* background-color: red; */
+  /* margin-bottom: 20px; */
 }
 
 .formGroup label {
   display: block;
-  margin-bottom: 5px;
-  /* background-color: purple; */
+  font-weight: bold;
 }
 
 .formGroup input {
-  background-color: rgb(167, 167, 167);
-  width: 100%;
-  padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 4px;
+  box-sizing: border-box; 
+  font-size: 15px;
 }
 
 .divCheckbox {
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
-  /* background-color: orange; */
 }
 
 .checkbox {
-  /* margin-right: 10px; */
-  /* background-color: orange; */
 }
 
+.btn, .btn_secondary {
+  padding: 10px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+/* Primary Button */
 .btn {
-  width: 100%;
-  padding: 10px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 10px;
+  background-color: #007bff; 
 }
-
 .btn:hover {
-  background-color: #0056b3;
+  background-color: #0069d9; 
 }
 
+/* Secondary Button */
 .btn_secondary {
-  width: 100%;
-  padding: 10px;
-  background-color: #6c757d;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 10px;
+  background-color: #6c757d; 
 }
-
 .btn_secondary:hover {
-  background-color: #5a6268;
+  background-color: #5a6268; 
+}
+.buttonsContainer{
+  display: flex;
+  justify-content:center;
+  margin-top: 20px;
+  gap: 20px;
 }
 
-.title {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-/* Estilos responsivos */
-@media (max-width: 768px) {
-  .register_form {
-    padding: 15px;
-  }
-
-  .formGroup input {
-    padding: 8px;
-  }
-
-  .btn, .btn_secondary {
-    padding: 8px;
-  }
-}
-
-@media (max-width: 576px) {
-  .register_form {
-    padding: 10px;
-  }
-
-  .formGroup input {
-    padding: 6px;
-  }
-
-  .btn, .btn_secondary {
-    padding: 6px;
-  }
-}

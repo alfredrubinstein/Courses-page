@@ -33,14 +33,15 @@ const Register = () => {
   return (
     <>
       {/* Register Form */}
+      <div className={styles.containerForm}>
       <div className={styles.register_form}>
         <div className={styles.divIntermedio}>
           <div className={styles.divInterno}>
             <form onSubmit={handleSubmit(onSubmit)}>
-              <h6 className={styles.title}>הרשמה למשתמשים חדשים</h6>
               <div className={styles.logoContainer}>
                 <Logo />
               </div>
+              <div className={styles.title}>הרשמה למשתמשים חדשים</div>
               <div className={styles.formGroup}>
                 <label htmlFor="name">שם</label>
                 <input
@@ -89,7 +90,7 @@ const Register = () => {
                   עקוף אימות
                 </label>
               </div>
-
+<div className={styles.buttonsContainer}>
               <button type="submit" className={styles.btn}>
                 הירשם
               </button>
@@ -102,9 +103,11 @@ const Register = () => {
               >
                 יש לך כבר חשבון?
               </button>
+              </div>
             </form>
           </div>
         </div>
+      </div>
       </div>
     </>
   );

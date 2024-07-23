@@ -35,7 +35,7 @@ export default function Modal(props) {
         <div className={styles.modalContainer}>
           <div className={styles.modalTitleContiner}>
             <div className={styles.salir}>
-              <botton onClick={handleExit}>✨</botton>
+              <botton onClick={handleExit}>X</botton>
             </div>
           <div className={styles.logo}><Logo/></div>
             <div className={styles.ModalTitle}></div>

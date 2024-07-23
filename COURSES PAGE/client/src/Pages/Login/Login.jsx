@@ -33,8 +33,8 @@ const Login = () => {
 
   return (
     <>
-    {/* <Modal text="hola estamos arreglando la pagina disculpe las molestias que esto pueda ocasionar" type="onlyExit" active='isActive'/> */}
-    {/* <Modal text="hola estamos arreglando la pagina disculpe las molestias que esto pueda ocasionar" type="onlyAccept" active='isActive'/> */}
+    {/* <Modal text="hola" type="onlyExit" active='isActive'/> */}
+    {/* <Modal text="hola como esta" type="onlyAccept" active='isActive'/> */}
     <Modal text="hola estamos arreglando la pagina disculpe las molestias que esto pueda ocasionar" type="doubleButton" active='isActive'/>
       {/* Login Form */}
       <div className={styles.loginForm}>
