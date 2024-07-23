@@ -8,6 +8,19 @@ import Logo from "../../Components/Logo/Logo"
 import BotomAlert from "../BotomAlert/BotomAlert";
 export default function Modal(props) {
   const [isActive,setIsActive]=useState(true);
+ 
+  const handleAccept = () => {
+    console.log("Ha presionado en aceptar");
+    setIsActive(false);
+
+  };
+
+  const handleReject = () => {
+    console.log("Ha presionado en negar");
+    setIsActive(false);
+
+  };
+ 
   const handleExit = () => {
     console.log("ha presionado en exit");
     setIsActive(false);
@@ -30,7 +43,7 @@ export default function Modal(props) {
             {/* {props.type === "accept" && <Accept />}
             {props.type === "reject" && <Reject />} */}
             <div className={styles.botomContainer}>
-              {props.type === "classic" && <BotomAlert type="doubleButton" onClick={handleExit}/>}
+              {props.type === "classic" && <BotomAlert type="doubleButton"  onAccept={handleAccept} onReject={handleReject}/>}
             </div>
           </div>
         </div>

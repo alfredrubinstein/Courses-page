@@ -1,23 +1,36 @@
-import {React,useState} from 'react'
-import styles from "./botomAlert.module.css"
+import React from 'react';
+import styles from "./botomAlert.module.css";
+
 export default function BotomAlert(props) {
-  // const [isActive,setIsActive]=useState(true);
+  const { type, onAccept, onReject } = props;
   
+  const handlerAccept = () => {
+    onAccept();
+    console.log("ha presionado en aceptar");
+  };
   
-const handlerAccept=()=>{
-  // setIsActive(false);
-  console.log("ha presionado en aceptar")}
-const handlerReject=()=>{
-  // setIsActive(false);
-  console.log("ha presionado en 'reject'")}
+  const handlerReject = () => {
+    onReject();
+    console.log("ha presionado en 'reject'");
+  };
+  
   return (
-    <div className={styles.buttonsContiner}>
-    <div className={styles.accept}>
-    <button onClick={handlerAccept}>✅</button>  
-    </div>
-    <div className={styles.reject}>
-     <button onClick={handlerReject}>🚩</button> 
-    </div>
-    </div>
-  )
+    <>
+      {type === "doubleButton" && (
+        <div className={styles.buttonsContiner}>
+          <div className={styles.accept}>
+            <button onClick={handlerAccept}>✅</button>  
+          </div>
+          <div className={styles.reject}>
+            <button onClick={handlerReject}>🚩</button> 
+          </div>
+        </div>
+      )}
+      {type === "singleButton" && (
+        <div className={styles.singleButton}>
+          <button onClick={handlerAccept}>✅</button>
+        </div>
+      )}
+    </>
+  );
 }
