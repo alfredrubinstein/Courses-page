@@ -1,12 +1,15 @@
+//forma de usar el component:
+  //  <Modal text="hola" type="onlyExit" active='isActive'/> 
+  //    <Modal text="como estas" type="onlyAccept" active='isActive'/> 
+  //    <Modal text="que estas haciendp" type="doubleButton" active='isActive'/> 
 import React from "react";
 import {useState}from "react";
 import styles from "./modal.module.css";
 import Logo from "../../Components/Logo/Logo"
-// import Exit from "../Buttons/Exit/Exit";
-// import Reject from "../Buttons/Reject/Reject";
-// import Accept from "../Buttons/Accept/Accept";
 import BotomAlert from "../BotomAlert/BotomAlert";
+
 export default function Modal(props) {
+  const { type, text } = props;
   const [isActive,setIsActive]=useState(true);
  
   const handleAccept = () => {
@@ -36,14 +39,11 @@ export default function Modal(props) {
             </div>
           <div className={styles.logo}><Logo/></div>
             <div className={styles.ModalTitle}></div>
-            {/* {props.type === "exit" && <Exit />} */}
           </div>
           <div className={styles.modalInterno}>
-            {props.text}
-            {/* {props.type === "accept" && <Accept />}
-            {props.type === "reject" && <Reject />} */}
+            {text}
             <div className={styles.botomContainer}>
-              {props.type === "classic" && <BotomAlert type="doubleButton"  onAccept={handleAccept} onReject={handleReject}/>}
+              {type && <BotomAlert type={type}  onAccept={handleAccept} onReject={handleReject}/>}
             </div>
           </div>
         </div>

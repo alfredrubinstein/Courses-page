@@ -1,3 +1,7 @@
+//forma de usar el component:
+//<BotomAlert type="doubleButton" onAccept={handlerAccept} onReject={handlerReject} />
+//<BotomAlert type="onlyAccept" onAccept={handlerAccept} />
+//<BotomAlert type="onlyExit"  />
 import React from 'react';
 import styles from "./botomAlert.module.css";
 
@@ -26,9 +30,13 @@ export default function BotomAlert(props) {
           </div>
         </div>
       )}
-      {type === "singleButton" && (
+      {type === "onlyAccept" && (
         <div className={styles.singleButton}>
           <button onClick={handlerAccept}>✅</button>
+        </div>
+      )}
+      {type === "onlyExit" && (
+        <div className={styles.singleButton}>
         </div>
       )}
     </>

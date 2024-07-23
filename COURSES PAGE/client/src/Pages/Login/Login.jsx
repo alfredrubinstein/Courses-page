@@ -33,7 +33,9 @@ const Login = () => {
 
   return (
     <>
-    <Modal text="hola estamos arreglando la pagina disculpe las molestias que esto pueda ocasionar" type="classic" active='isActive'/>
+    {/* <Modal text="hola estamos arreglando la pagina disculpe las molestias que esto pueda ocasionar" type="onlyExit" active='isActive'/> */}
+    {/* <Modal text="hola estamos arreglando la pagina disculpe las molestias que esto pueda ocasionar" type="onlyAccept" active='isActive'/> */}
+    <Modal text="hola estamos arreglando la pagina disculpe las molestias que esto pueda ocasionar" type="doubleButton" active='isActive'/>
       {/* Login Form */}
       <div className={styles.loginForm}>
         <div className={styles.divIntermedio}>
