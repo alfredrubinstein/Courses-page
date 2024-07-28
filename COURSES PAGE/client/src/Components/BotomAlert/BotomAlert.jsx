@@ -5,6 +5,7 @@
 import React from 'react';
 import styles from "./botomAlert.module.css";
 
+
 export default function BotomAlert(props) {
   const { type, onAccept, onReject } = props;
   

@@ -1,4 +1,4 @@
-//formulario
+//formulario contenedor de elementos de formulario para el login
 import React from 'react';
 import { useForm, FormProvider } from 'react-hook-form';
 import styles from './login.module.css';
@@ -22,3 +22,4 @@ export default function Login() {
     </FormProvider>
   );
 }
+

@@ -1,4 +1,4 @@
-//formulario
+//formulario input unico
 import React from 'react';
 import { useFormContext } from 'react-hook-form';
 import styles from "./formInput.module.css";
@@ -20,3 +20,4 @@ export default function FormInput(props) {
     </div>
   );
 }
+

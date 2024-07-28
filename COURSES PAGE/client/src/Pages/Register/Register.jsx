@@ -1,4 +1,4 @@
-//formulario
+//formulario contenedor de elementos de formulario para el register
 import React from 'react';
 import { useForm, FormProvider } from 'react-hook-form';
 import styles from './register.module.css';
